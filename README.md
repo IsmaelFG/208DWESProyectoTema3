@@ -1,4 +1,4 @@
-# Proyecto DWES
+# Proyecto DWESTema3
 ## Autor
 Ismael Ferreras García
 ## Requisitos
