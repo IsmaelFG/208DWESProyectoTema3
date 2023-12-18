@@ -92,16 +92,6 @@
             <input type="reset" value="Borrar">
             <input type="submit" value="Enviar">
         </form>
-        <?php
-        $nombre = $_POST["nombre"];
-        $edad = $_POST["edad"];
-        $altura = $_POST["altura"];
-
-        echo "<p><strong>Nombre:</strong> $nombre</p>";
-        echo "<p><strong>Edad:</strong> $edad</p>";
-        echo "<p><strong>Altura:</strong> $altura</p>";
-        ?>
-
         <footer class="bg-primary text-light py-4 fixed-bottom">
             <div class="container">
                 <div class="row">

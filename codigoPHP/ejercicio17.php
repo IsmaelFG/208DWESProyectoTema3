@@ -53,17 +53,17 @@
             }
         }
 //Recorrido con while
+        reset($ateatro);
         echo "<br>Recorrido con while:<br>";
-        while (key($ateatro) !== null) {
-            $fila = key($ateatro);
-            next($ateatro); // Avanza el puntero interno
-            while (key($ateatro) !== null) {
-                $asiento = key($ateatro);
-                $nombre = current($ateatro);
-                echo ("$fila, Reservado por: $nombre\n");
-
-                next($ateatro); // Avanza el puntero interno
+        $fila = 1;
+        while ($fila < 21) {
+            $asiento = 1;
+            while ($asiento < 16) {
+                $estado = $ateatro[$fila][$asiento] ? $ateatro[$fila][$asiento] : "";
+                echo("<div class='butacas " . $estado . "'> [$fila][$asiento]: " . $estado . "</div>");
+                $asiento++;
             }
+            $fila++;
         }
         ?>
 
